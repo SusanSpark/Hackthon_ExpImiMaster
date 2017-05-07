@@ -1,0 +1,20 @@
+.remind ul li .right {
+    width:66px;
+    height:36px;
+    padding:3px;
+    border-radius: 30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    background-color: #838383;
+    position: relative;
+}
+
+.remind ul li .right .btnn {
+    width:30px;
+    height:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px;
+    background-color: #fff;
+    position: absolute;
+}

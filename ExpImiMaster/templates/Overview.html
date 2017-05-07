@@ -1,0 +1,262 @@
+{% extends "layout.html" %}
+  {% block css %}
+    <!-- Datatables -->
+    <link href="../static/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../static/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="../static/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="../static/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="../static/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+      <link href="../static/vendors/toggle/toggle.bootstrap.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../static/gentelella_template/build/css/custom.min.css" rel="stylesheet">
+
+{% endblock %}
+
+
+<title>
+        {% block title %}
+            Hackthon Competition ExpImiMaster
+        {% endblock %}
+    </title>
+
+
+ {% block content %}
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+
+
+        <!-- page content -->
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h2>ExpImiMaster  表情模仿大师</h2>
+              </div>
+             <div style = "text-align:right;">
+
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+          <div class="row">
+             <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                      <h2><a href="/">川普式尬笑</a></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <button id="btn1" type="button" class="btn btn-primary">Start</button>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                       <img src="../static/images/biaoqing/1.jpg" id="picture1" height="358" width="369" style="text-align:center">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                     <h2><a href="/bg">川普式咆哮</a></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <button id="btn2" type="button" class="btn btn-primary">Start</button>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <img src="../static/images/biaoqing/2.jpg" id="picture2" height="358" width="369" style="text-align:center">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <div class="row">
+             <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                      <h2><a href="/">异常的香菜</a></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <button id="btn3" type="button" class="btn btn-primary">Start</button>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                       <img src="../static/images/biaoqing/3.jpg" id="picture3" height="358" width="369" style="text-align:center">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                     <h2><a href="/bg">正常的香菜</a></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <button id="btn4" type="button" class="btn btn-primary">Start</button>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <img src="../static/images/biaoqing/4.jpg" id="picture4" height="358" width="369" style="text-align:center">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <div class="row">
+             <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                      <h2><a href="/">达康式卖萌</a></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <button id="btn5" type="button" class="btn btn-primary">Start</button>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                       <img src="../static/images/biaoqing/5.jpg" id="picture5" height="358" width="369" style="text-align:center">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                     <h2><a href="/bg">达康式不屑</a></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <button id="btn6" type="button" class="btn btn-primary">Start</button>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <img src="../static/images/biaoqing/6.jpg" id="picture6" height="358" width="369" style="text-align:center">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <div class="row">
+             <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                      <h2><a href="/">元首的冷漠</a></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <button id="btn7" type="button" class="btn btn-primary">Start</button>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                       <img src="../static/images/biaoqing/7.jpg" id="picture7" height="358" width="369" style="text-align:center">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                     <h2><a href="/bg">元首的愤怒</a></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <button id="btn8" type="button" class="btn btn-primary">Start</button>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <img src="../static/images/biaoqing/8.jpg" id="picture8" height="358" width="369" style="text-align:center">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <div class="row">
+             <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                      <h2><a href="/">居然排第三</a></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <button id="btn9" type="button" class="btn btn-primary">Start</button>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                       <img src="../static/images/biaoqing/9.jpg" id="picture9" height="358" width="369" style="text-align:center">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                     <h2><a href="/bg">我太高兴了</a></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <button id="btn10" type="button" class="btn btn-primary">Start</button>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <img src="../static/images/biaoqing/10.jpg" id="picture10" height="358" width="369" style="text-align:center">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <div class="row">
+             <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                      <h2><a href="/">黑人问号脸</a></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <button id="btn11" type="button" class="btn btn-primary">Start</button>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                       <img src="../static/images/biaoqing/11.jpg" id="picture11" height="358" width="369" style="text-align:center">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                     <h2><a href="/bg">尔康大鼻孔</a></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <button id="btn12" type="button" class="btn btn-primary">Start</button>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <img src="../static/images/biaoqing/12.jpg" id="picture12" height="358" width="369" style="text-align:center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+     </div>
+
+{% block js%}
+    <!-- jQuery -->
+    <script src="../static/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../static/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../static/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../static/vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../static/vendors/Chart.js/dist/Chart.min.js"></script>
+
+    <script src="../static/js/maps/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="../static/js/maps/jquery-jvectormap-us-aea-en.js"></script>
+    <script src="../static/js/maps/gdp-data.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../static/gentelella_template/build/js/custom.min.js"></script>
+    <script src="../static/js/overview.js"></script>
+{% endblock %}
+
+
+    <!-- Chart.js -->
+  </body>
+ {% endblock %}
+
+

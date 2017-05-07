@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+
+{% block css %}
+    <!-- Datatables -->
+    <link href="../static/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../static/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="../static/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="../static/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="../static/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+{% endblock %}
+<title>
+        {% block title %}
+            Comparing Results of Expression Imitation
+        {% endblock %}
+    </title>
+
+{% block content %}
+    <div class="col-md-10 col-md-offset-1">
+
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>Comparing Results of Expression Imitation </h2>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+             <div class="row">
+             <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                      <h2><a href="/">原表情包</a></h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                       <img src="../static/images/biaoqing/3.jpg" id="picture1" height="300" width="312">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                     <h2><a href="/">模仿表情包</a></h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="imitationClass">
+                    <img src = "../static/images/savePicture/out.jpg" id="picture2" height="300" width="312">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <p style="font-size: 30px">模仿得分:{{ scores }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+                <div style = "text-align:right;">
+                       <button id="btn_back" type="button" class="btn btn-primary" onclick="{location.href='/'}">Back</button>
+              </div>
+            </div>
+        </div>
+
+
+{% endblock %}
+
+
+
+{% block js %}
+    <!-- Datatables -->
+    <script src="../static/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../static/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="../static/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../static/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="../static/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../static/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../static/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../static/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="../static/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="../static/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../static/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="../static/vendors/datatables.net-scroller/js/datatables.scroller.min.js"></script>
+    <script src="../static/vendors/jszip/dist/jszip.min.js"></script>
+    <script src="../static/vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="../static/vendors/pdfmake/build/vfs_fonts.js"></script>
+    <script src="../static/js/score.js"></script>
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}
